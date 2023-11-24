@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome cdn -->
+    <title>A W S</title>
+  </head>
+  <body>
+    <header class="mainNavbar">
+      <div class="logoContainer">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <i class="toggle-bar fa-solid fa-bars" id="toggleButton"></i>
+      <div class="navContent">
+        <div class="infoContainer">
+          <div class="IconNav">
+            <a href="#" class="icon_style"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="icon_style"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="icon_style"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="icon_style"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+          <div class="contactinfo">
+            <div class="call">
+              <i class="fa-solid fa-phone"></i>
+              <p>+91 86 86 86 2475</p>
+            </div>
+            <div class="email">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Info@awcindia.in</p>
+            </div>
+          </div>
+        </div>
+        <nav class="NavPages">
+          <div class="pages">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">PRODUCT</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">CAREER</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">TESTIMONIALS</a></li>
+            </ul>
+          </div>
+          <div class="button"><a href="#">CONTACT US</a></div>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("toggleButton");
+        const navPages = document.querySelector(".NavPages");
+
+        toggleButton.addEventListener("click", function () {
+          navPages.classList.toggle("show");
+
+          if (navPages.classList.contains("show")) {
+            toggleButton.classList.replace("fa-bars", "fa-times");
+          } else {
+            toggleButton.classList.replace("fa-times", "fa-bars");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

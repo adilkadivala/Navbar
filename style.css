@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #000;
+  --main-color: #1386d3;
+  --secondary-color: #fff;
+}
+/* header start */
+.mainNavbar {
+  display: flex;
+  padding: 1.5% 17%;
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+/* logo section start */
+.logoContainer {
+  width: 20%;
+  height: 100px;
+}
+.logoContainer img {
+  width: 65%;
+  margin: 15px 15px 0 15px;
+}
+.logoContainer .toggle-bar {
+  color: var(--secondary-color);
+  display: none;
+}
+/* logo section end */
+
+/* icon section start */
+/* social media icon section start */
+.navContent {
+  width: 100%;
+  padding: 0 1%;
+  height: auto;
+}
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 1%;
+  height: auto;
+}
+.IconNav {
+  width: 23%;
+}
+.icon_style {
+  padding: 5px 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.icon_style:hover {
+  padding: 5px 3px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+.icon_style i {
+  color: var(--main-color);
+  padding: 0 2%;
+  transition: all 0.5s;
+}
+.icon_style i:hover {
+  color: var(--secondary-color);
+  padding: 0 2%;
+}
+/* social media icon section start */
+/* contact icon section start */
+.contactinfo {
+  width: 77%;
+  padding: 0 0 0 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.call {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+.call i {
+  color: var(--main-color);
+}
+.call p {
+  color: var(--secondary-color);
+}
+.email {
+  display: flex;
+  width: 35%;
+  justify-content: space-evenly;
+}
+.email i {
+  color: var(--main-color);
+}
+.email p {
+  color: var(--secondary-color);
+}
+/* contact icon section start */
+/* icon section end */
+
+/* nav pages section start */
+
+.NavPages {
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+  padding: 0 2% 0 0;
+  justify-content: space-evenly;
+}
+.pages {
+  width: 85%;
+}
+
+.pages ul {
+  display: flex;
+}
+
+.pages ul li {
+  list-style: none;
+  padding: 0 2%;
+}
+
+.pages ul li a {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--secondary-color);
+  transition: all 0.5s;
+}
+
+.pages ul li a:focus {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+.pages ul li a:hover {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--main-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.button {
+  width: 25%;
+}
+.button a {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  font-size: 13px;
+}
+
+/* nav pages section end */
+/* header end */
+
+/* resonsive for laptop  */
+
+@media only screen and (max-width: 1024px) {
+  .mainNavbar {
+    padding: 1.5% 10%;
+  }
+  .contactinfo {
+    padding: 0 0 0 10%;
+  }
+  .NavPages {
+    padding: 0;
+  }
+  .pages {
+    width: 75%;
+  }
+  .button {
+    width: 25%;
+  }
+  .button a {
+    padding: 10px 10px;
+  }
+  .pages ul {
+    display: flex;
+  }
+  .pages ul li {
+    padding: 0 1%;
+  }
+}
+
+/* tablate */
+@media only screen and (max-width: 768px) {
+  .mainNavbar {
+    position: relative;
+    display: flex;
+    padding: 1.5% 3%;
+    width: 100%;
+    height: 80px;
+  }
+  .logoContainer {
+    width: 20%;
+    height: 60px;
+  }
+  .logoContainer img {
+    width: 80%;
+    margin: 0;
+  }
+  .infoContainer {
+    display: none;
+  }
+
+  .mainNavbar i {
+    color: var(--secondary-color);
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    right: 5%;
+  }
+
+  .navContent {
+    width: 50%;
+    padding: 0 1%;
+    height: auto;
+    text-align: center;
+  }
+
+  .NavPages {
+    width: 50%;
+    position: absolute;
+    top: 35px;
+    height: 350px;
+    text-align: center;
+    display: block;
+    background-color: var(--primary-color);
+    right: 0;
+  }
+  .pages {
+    display: block;
+    margin: 0 auto;
+    padding: 2% 5%;
+  }
+
+  .pages ul {
+    display: block;
+  }
+
+  .pages ul li {
+    list-style: none;
+    margin-top: 20px;
+  }
+
+  .pages ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondary-color);
+    transition: all 0.5s;
+  }
+  .button {
+    width: 50%;
+    display: block;
+    margin: 20px auto 0;
+    height: 40px;
+  }
+  .button a {
+    align-items: center;
+    margin-top: 20px;
+
+    font-size: 13px;
+  }
+
+  .NavPages {
+    width: 50%;
+    position: absolute;
+    top: 35px;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    background-color: var(--primary-color);
+    right: 0;
+    transition: max-height 0.5s ease;
+  }
+
+  .NavPages.show {
+    max-height: 350px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .logoContainer {
+    width: 20%;
+    height: 60px;
+  }
+  .logoContainer img {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+  }
+  .button {
+    width: 100%;
+  }
+  .button a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: 13px;
+  }
+
+  .NavPages {
+    width: 50%;
+    position: absolute;
+    top: 35px;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    background-color: var(--primary-color);
+    right: 0;
+    transition: max-height 0.5s ease;
+  }
+
+  .NavPages.show {
+    max-height: 350px;
+  }
+}
